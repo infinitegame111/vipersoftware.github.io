@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.closecontrol{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    color: darkgray;
+}
+
+.closecontrol a{
+    font-size: 20px;
+    padding: 0 7px;
+    color: darkgray;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.closecontrol a:hover{
+    transition: .4s;
+    color: white;
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    padding: 0, 7px;
+    border-radius: 30px;
+}
+
+.authpanel{
+    margin-top: 150px;
+    padding: 10px 20px;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 0 5px 15px rgb(192, 192, 192);
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.authpanel .content h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.authpanel .content p{
+    max-width: 100%;
+    width: 480px;
+    color: darkgray;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.authpanel .successicon{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.authpanel .successicon a{
+    font-size: 100px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid darkgray;
+    padding: 0 65px;
+    height: 100px;
+}
