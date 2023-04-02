@@ -33,7 +33,7 @@
             <li><a href="#">Software</a></li>
             <li><a href="#">Forums</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#" class="btn">Login</a></li>
+            <li><a onclick="showFullscreen()" class="btn">Login</a></li>
         </ul>
 
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -46,7 +46,7 @@
             <h6>What's up with Viper?</h6>
             <p>Viper Software is launching our first productsthis year and next year such as undone browser, fighters edge, socave chatting and our launcher! Be the first to know about these apps by creating an account today!</p>
             <h4>Viper Software 2019</h3>
-            <a herf="#"><i class="fa-solid fa-circle-down"></i> Download Launcher</a>
+            <a><i class="fa-solid fa-circle-down"></i> Download Launcher</a>
         </div>
 
         <div class="hero-img">
@@ -66,6 +66,24 @@
     <script src="JavaScript/menu.js"></script>
 
     <!--Viper Login Services-->
-    
+    <script>
+        const xl = new XsollaLogin.Widget({
+          projectId: '41da3d87-7f53-442e-a993-ba5cc9941b07',
+          preferredLocale: 'en_US'
+        });
+    </script>
+
+    <div id="xl_auth" style="display: none"></div>
+
+    <script type="text/javascript">
+        xl.mount('xl_auth');
+      
+        function showFullscreen() {
+          const myDiv = document.querySelector('#xl_auth');
+          myDiv.style.display = 'block';
+      
+          xl.open();
+        }
+      </script>
 </body>
 </html>
