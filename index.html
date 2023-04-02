@@ -3,7 +3,7 @@
 <head>
     <!--Redirect for https and direct settings-->
     <script type="text/javascript">
-        var host = "viper101.org";
+        var host = "{{ site_url }}{{ page_url }}";
         if ((host == window.location.host) && (window.location.protocol != "https:"))
             window.location.protocol = "https:";
     </script>
