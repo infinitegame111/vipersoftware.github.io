@@ -11,7 +11,7 @@
     <script src="https://login-sdk.xsolla.com/latest/"></script>
 
     <!--Base style sheet-->
-    <link rel="stylesheet" href="/CSS/account.css">
+    <link rel="stylesheet" href="CSS/account.css">
     <link rel="icon" type="image/x-icon" href="https://vipersoftware.org/Assets/intact-software-logo.ico">
 
     <!--Font Family and font awesome-->
@@ -20,16 +20,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+
     <!--Boxicons and aditinal code-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
 
+    <!--Navigation Bar-->
     <header>
-        <a href="#" class="logo">Account</a>
-        <a href=""><i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
-        <a href=""><i class="fa-sharp fa-solid fa-ellipsis-vertical"></i></a>
+        <a href="#" class="watermark"><i class="fa-sharp fa-solid fa-user"></i> Welcome, USR_NME!</a>
+        <div class="navlist">
+            <a onclick="openAlert()"><i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
+            <a onclick="openNav()"><i class="fa-sharp fa-solid fa-ellipsis-vertical"></i></a>
+        </div>
     </header>
 
+    <div class="seperator"></div>
+
+    <!--Account Content-->
+    <!--Enter API Calls and other connections here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--End of account content-->
+
+    <!--AlertBox-->
+    <div id="example">
+        <div>
+          <p id="alert-info">THERE WAS A PROBLEM TRYING TO COMPLETE YOUR REQUEST<br>PLEASE TRY AGAIN LATER...</p>
+          <hr style="margin-top: 10px; margin-bottom: 10px;"/>
+          <a href='#' onclick='closeAlert()'>I UNDERSTAND</a>
+        </div>
+        <script>
+          function closeAlert() {
+            var alertpopup = document.getElementById('example');
+            alertpopup.style.visibility = 'hidden';
+          }
+        </script>
+      </div>
+
+    <script>
+        function openAlert() {
+            var alertpopup = document.getElementById('example');
+            alertpopup.style.visibility = 'visible';
+        }
+    </script>
 </body>
 </html>
