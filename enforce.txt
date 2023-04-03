@@ -1,6 +1,0 @@
-<script type="text/javascript">
-        var host = "{{ site_url }}{{ page_url }}";
-        if ((host == window.location.host) && (window.location.protocol != "https:"))
-            window.location.protocol = "https:";
-    </script>
-    <link rel="canonical" href="vipersoftware.org"/>
