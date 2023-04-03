@@ -50,38 +50,7 @@ header{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #example {
+#example {
     visibility: hidden;
     position: absolute;
     left: 0;
@@ -90,9 +59,9 @@ header{
     height: 100%;
     text-align: center;
     z-index: 1000;
-  }
+}
 
-  #example div {
+#example div {
     width: 350px;
     height: 130px;
     margin: 100px auto;
@@ -110,6 +79,6 @@ header{
     left: 50%;
     top: 100px;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-  }
+}
