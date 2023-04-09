@@ -68,6 +68,9 @@ header{
 
 section{
     padding: 0 5%;
+    margin-top: 50px;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .hero-text h6{
