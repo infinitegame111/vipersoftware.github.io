@@ -28,6 +28,8 @@ header{
 
 .navlist{
     display: flex;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .navlist a{
@@ -68,7 +70,7 @@ header{
 
 section{
     padding: 0 5%;
-    margin-top: 50px;
+    margin-top: 70px;
     overflow: hidden;
     overflow-y: hidden;
 }
@@ -292,6 +294,7 @@ section{
     section{
         padding: 0 12%;
         transition: .2s;
+        margin-top: 70px;
     }
 }
 
