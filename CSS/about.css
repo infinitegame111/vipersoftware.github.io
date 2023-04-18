@@ -18,6 +18,8 @@ header{
     justify-content: space-between;
     padding: 12px 60px;
     background: transparent;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .logo{
@@ -28,8 +30,6 @@ header{
 
 .navlist{
     display: flex;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
 }
 
 .navlist a{
