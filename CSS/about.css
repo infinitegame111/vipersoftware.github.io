@@ -286,6 +286,7 @@ section{
 
     .hero-text h1{
         font-size: 45px;
+        margin-top: 8px;
         margin-bottom: 20px;
         margin-left: 10px;
     }
@@ -319,10 +320,6 @@ section{
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
-    }
-
-    .scroll-down{
-        display: none;
     }
 }
 
