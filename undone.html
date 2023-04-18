@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Redirect for https and direct settings-->
+    <script type="text/javascript">
+        var host = "{{ site_url }}{{ page_url }}";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https:";
+    </script>
+    <link rel="canonical" href="vipersoftware.org"/>
+    <!--Base html tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undone</title>
 
+    <!--Xsolla Initigration-->
+    <script src="https://login-sdk.xsolla.com/latest/"></script>
+
+    <!--Base style sheet-->
+    <link rel="stylesheet" href="https://vipersoftware.org/CSS/undone.css">
+    <link rel="icon" type="image/x-icon" href="https://vipersoftware.org/Assets/intact-software-logo.ico">
+
+    <!--Font Family and font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Boxicons and aditinal code-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!--Navlist and header-->
+    <header>
+        <a href="#" class="logo">Viper Software</a>
+
+        <ul class="navlist">
+            <li><a href="/about">About</a></li>
+            <li><a href="#" class="active">Undone</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a onclick="showFullscreen()" class="btn">Login</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!--Recommended and request section-->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Undone Browser</h1>
+            <h6>Speed, Security, Privacy.</h6>
+            <p>Undone is a beautiful, secure and privacy based browser for modern web users and developers. Undone is a simple browser made off of chromium without trackers or built-in viper services. Undone is browser made to be secured and fast. No Trackers, No Overgrown Intigration and No Unwanted Branding.</p>
+            <h4>The Undone Authors</h3>
+            <a><i class="fa-solid fa-circle-down"></i> Download Undone!</a>
+        </div>
+
+        <div class="hero-img">
+            <img height="450" width="700" src="https://vipersoftware.org/Assets/backdrop.png"
+        </div>
+    </section
+          
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Your Security Our Services</h1>
+            <p>Your security matters to us more than anything.<br>Feel free to contact us to request a<br>break down on how your data is used.</p>
+        </div>
+    </div>
+
+    <!--scroll reveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Js Scripts-->
+    <script src="https://vipersoftware.org/JavaScript/menu.js"></script>
+    <script src="https://vipersoftware.org/JavaScript/prompt.js"></script>
+
+    <!--Viper Login Services-->
+    <script>
+        const xl = new XsollaLogin.Widget({
+          projectId: '41da3d87-7f53-442e-a993-ba5cc9941b07',
+          preferredLocale: 'en_US'
+        });
+    </script>
+
+    <div id="xl_auth" style="display: none"></div>
+
+    <script type="text/javascript">
+        xl.mount('xl_auth');
+      
+        function showFullscreen() {
+          const myDiv = document.querySelector('#xl_auth');
+          myDiv.style.display = 'block';
+        
+          xl.open();
+        }
+      </script>
+</body>
+</html>
