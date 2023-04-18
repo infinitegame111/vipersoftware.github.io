@@ -145,28 +145,6 @@ section{
     transform: translateY(-50%);
 }
 
-.scroll-down{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-.scroll-down i{
-    display: block;
-    padding: 12px;
-    font-size: 25px;
-    color: white;
-    transition: all .50s ease;
-    background: rgba(0, 0, 0, 0.089)00;
-    border-radius: 30px;
-}
-
-.scroll-down i:hover{
-    transform: translateY(-5px);
-    background: rgba(0, 0, 0, 0.13)00;
-}
-
-
 .navlist a.btn{
     background: transparent;
     color: black;
