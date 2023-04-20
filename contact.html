@@ -50,8 +50,8 @@
     <!--Base Code-->
     <div class="container">
         <center>
-            <form>
-                <h3>Contact Us!</h3>
+            <form onsubmit="sendEmail(); reset();">
+                <h3 class="contentstatus">Contact Us!</h3>
                 <input type="text" id="name" placeholder="Enter Your Name" required>
                 <input type="email" id="email" placeholder="Enter Your Email" required>
                 <input type="text" id="phone" placeholder="Enter Your Phone" required>
@@ -82,6 +82,28 @@
           myDiv.style.display = 'block';
         
           xl.open();
+        }
+      </script>
+      <scirpt src="https://smtpjs.com/v3/smtp.js"></scirpt>
+
+      <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "Name: " + getElementById('name').value + '<br>'
+                + "Email: " + getElementById('email').value + '<br>'
+                + "Phone Number: " + getElementById('text').value + '<br>' + '___________________________________________________________________' + '<br>'
+                + "There Message: " + getElementById('message').value + '<br>'
+            }).then(
+            message => alert(message)
+            );
+
+            status = document.getElementById('contentstatus');
+            status.innerHTM = 'Message Sent!';
+            status.style.color = green;
         }
       </script>
 </body>
