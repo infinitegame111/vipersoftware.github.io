@@ -60,9 +60,9 @@ header{
 }
 
 form{
-    background: #f0f0f0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.578);
+    margin-top: 70px;
     display: flex;
+    text-align: center;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
@@ -77,26 +77,33 @@ form h3{
 }
 
 form input, form textarea{
-    border: 0;
+    border: 1px solid #00000021;
+    text-align: left;
     margin: 10px 0;
-    padding: 20px;
+    padding: 8px 30px;
     outline: none;
-    border-radius: 15px;
-    background: #dcdcdc;
+    border-radius: 8px;
     font-size: 15px;
+    transition: all .55s ease;
+}
+
+form input:focus, form textarea:focus{
+    border: 1px solid #00000074;
 }
 
 form button{
+    margin-top: 100px;
     padding: 8px 30px;
-    background: #dcdcdc;
-    border-radius: 15px;
+    background: transparent;
+    border-radius: 8px;
     color: black;
     font-size: 15px;
     border: 0;
     outline: none;
     cursor: pointer;
+    transition: all .55s ease;
 }
 
 form button:hover{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.578);
+    border: 1px solid rgba(0, 0, 0, 0.158);
 }
