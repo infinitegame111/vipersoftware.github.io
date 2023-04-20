@@ -43,6 +43,24 @@ header{
     border-bottom: 2px solid darkgray;
 }
 
+.navlist a.btn{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 50px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+.navlist a.btn:hover{
+    background: black;
+    color: white;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+}
+
 #menu-icon{
     color: black;
     font-size: 30px;
@@ -92,7 +110,7 @@ form input:focus, form textarea:focus{
 }
 
 form button{
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 8px 30px;
     background: transparent;
     border-radius: 8px;
