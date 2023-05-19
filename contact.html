@@ -12,13 +12,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Viper Software</title>
 
     <!--Xsolla Initigration-->
     <script src="https://login-sdk.xsolla.com/latest/"></script>
 
     <!--Base style sheet-->
-    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="https://vipersoftware.org/CSS/index.css">
     <link rel="icon" type="image/x-icon" href="https://vipersoftware.org/Assets/intact-software-logo.ico">
 
     <!--Font Family and font awesome-->
@@ -34,39 +34,45 @@
 
     <!--Navlist and header-->
     <header>
-        <a href="https://vipersoftware.org" class="logo">Viper Software</a>
+        <a href="#" class="logo">Viper Software</a>
 
         <ul class="navlist">
             <li><a href="/about">About</a></li>
             <li><a href="/undone">Undone</a></li>
             <li><a href="#">Documents</a></li>
-            <li><a href="#" class="active">Contact</a></li>
+            <li><a class="active" href="/contact">Contact</a></li>
             <li><a onclick="showFullscreen()" class="btn">Login</a></li>
         </ul>
 
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <!--Base Code-->
-    <div class="container">
-        <center>
-            <form onsubmit="sendEmail(); reset();">
-                <h3 class="contentstatus">Contact Us!</h3>
-                <input type="text" id="name" placeholder="Enter Your Name" required>
-                <input type="email" id="email" placeholder="Enter Your Email" required>
-                <input type="text" id="phone" placeholder="Enter Your Phone" required>
-                <textarea id="message" placeholder="How can we help?" cols="30" rows="10"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </center>
-    </div>
+    <!--Recommended and request section-->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>What's Up?</h1>
+            <h6>We are here to help you!</h6>
+            <p>Feel free to contact us via our discord server!<br>We would love to get in touch with our community and would be happy to help you with questions about undone, releases, products, games and security.</p>
+            <h4>Discord 12+ Rating</h3>
+            <a href="/undone"><i class="fa-solid fa-circle-down"></i> Get In Touch</a>
+        </div>
+
+        <div class="hero-img">
+            <img height="450" width="700" src="https://vipersoftware.org/Assets/contact-banner.png"
+        </div>
+    </section>
+
+    <!--Added components-->
+
+    <!--scroll reveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--Js Scripts-->
     <script src="https://vipersoftware.org/JavaScript/menu.js"></script>
 
     <!--Viper Login Services-->
-    <script src="https://vipersoftware.org/Javascript/init-login.js"></script>
+    <script src="https://vipersoftware.org/JavaScript/init-login.js"></script>
     <div id="xl_auth" style="display: none"></div>
-    <script src="https://vipersoftware.org/Javascript/login.js"></script>
+    <script src="https://vipersoftware.org/JavaScript/login.js"></script>
 </body>
 </html>
