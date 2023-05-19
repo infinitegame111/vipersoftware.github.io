@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+    transition: all .55s ease;
     text-decoration: none;
 }
 
@@ -18,9 +19,11 @@ header{
     justify-content: space-between;
     padding: 12px 60px;
     background: transparent;
+    transition: all .55s ease;
 }
 
 .logo{
+    transition: all .55s ease;
     font-size: 30px;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -28,6 +31,7 @@ header{
 
 .navlist{
     display: flex;
+    transition: all .55s ease;
 }
 
 .navlist a{
@@ -70,6 +74,7 @@ header{
 }
 
 .hero{
+    transition: all .55s ease;
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -91,36 +96,48 @@ header{
     border-radius: 0 0 100% 100% / 0 0 30% 30%;
 }
 
-.beta-front-img{
-    position: relative;
-    margin-bottom: 2%;
-    margin-top: 5%;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgb(0, 0, 0);
-}
-
 .herotxt{
     position: relative;
     text-align: center;
     padding-top: 10%;
+    transition: all .55s ease;
 }
 
 .herotxt h1{
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
     color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-}
-
-.herotxt p{
-    color: darkgray;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 1.5;
     margin-bottom: 15px;
 }
 
+.herotxt p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+.herotxt a{
+    background: white;
+    color: black;
+    box-shadow: 0 5px 15px rgba(98, 98, 98, 0.548);
+    border: 1px solid white;
+    padding: 8px 50px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .4s ease;
+    height: auto;
+    width: 150px;
+}
+
+.herotxt a:hover{
+    box-shadow: 0 5px 15px rgb(98, 98, 98);
+    border: 1px solid rgb(0, 0, 0);
+}
 
 
 
@@ -187,11 +204,6 @@ header{
 }
 
 @media (max-width: 1340px){
-    .beta-front-img img{
-        width: 100%;
-        height: auto;
-        display: flex;
-    }
 
     .hero-text h1{
         font-size: 45px;
@@ -212,16 +224,6 @@ header{
 
     .hero-text{
         padding-top: 130px;
-    }
-
-    .beta-front-img{
-        text-align: center;
-    }
-
-    .beta-front-img img{
-        width: 100%;
-        height: auto;
-        display: none;
     }
 
     .hero{
@@ -265,15 +267,5 @@ header{
 
     .navlist.open{
         right: 2%;
-    }
-}
-
-@media (max-width: 680px){
-    .beta-front-img img{
-        width: 100%;
-        height: auto;
-        display: none;
-        padding: 8px 30px;
-        border-radius: 30px;
     }
 }
