@@ -65,46 +65,7 @@
     <script src="https://vipersoftware.org/JavaScript/menu.js"></script>
 
     <!--Viper Login Services-->
-    <script>
-        const xl = new XsollaLogin.Widget({
-          projectId: '41da3d87-7f53-442e-a993-ba5cc9941b07',
-          preferredLocale: 'en_US'
-        });
-    </script>
-
     <div id="xl_auth" style="display: none"></div>
-
-    <script type="text/javascript">
-        xl.mount('xl_auth');
-      
-        function showFullscreen() {
-          const myDiv = document.querySelector('#xl_auth');
-          myDiv.style.display = 'block';
-        
-          xl.open();
-        }
-      </script>
-      <scirpt src="https://smtpjs.com/v3/smtp.js"></scirpt>
-
-      <script>
-        function sendEmail(){
-            Email.send({
-                SecureToken : "0ac3455f-af32-40aa-ad04-3f1ddba2bc80",
-                To : 'infinitegamesmanagement@gmail.com',
-                From : document.getElementById('email').value,
-                Subject : "Support Request",
-                Body : "Name: " + getElementById('name').value + '<br>'
-                + "Email: " + getElementById('email').value + '<br>'
-                + "Phone Number: " + getElementById('text').value + '<br>' + '___________________________________________________________________' + '<br>'
-                + "There Message: " + getElementById('message').value + '<br>'
-            }).then(
-            message => alert(message)
-            );
-
-            status = document.getElementById('contentstatus');
-            status.innerHTM = 'Message Sent!';
-            status.style.color = green;
-        }
-      </script>
+    <script src="https://vipersoftware.org/Javascript/login.js"></script>
 </body>
 </html>

@@ -81,24 +81,7 @@
     <script src="https://vipersoftware.org/JavaScript/menu.js"></script>
 
     <!--Viper Login Services-->
-    <script>
-        const xl = new XsollaLogin.Widget({
-          projectId: '41da3d87-7f53-442e-a993-ba5cc9941b07',
-          preferredLocale: 'en_US'
-        });
-    </script>
-
     <div id="xl_auth" style="display: none"></div>
-
-    <script type="text/javascript">
-        xl.mount('xl_auth');
-      
-        function showFullscreen() {
-          const myDiv = document.querySelector('#xl_auth');
-          myDiv.style.display = 'block';
-        
-          xl.open();
-        }
-      </script>
+    <script src="https://vipersoftware.org/Javascript/login.js"></script>
 </body>
 </html>
