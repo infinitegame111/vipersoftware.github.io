@@ -224,7 +224,7 @@ section{
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px solid rgb(0, 119, 255);
+    border-bottom: 2px dotted rgb(0, 119, 255);
   }
   
   .tooltip .tooltiptext {
